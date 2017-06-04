@@ -1,0 +1,29 @@
+
+<div id="container_user">
+    <a class="add" href="?navigate=add_note">Add a new note</a><br/>
+</div>
+
+<div id="posts">
+    <?php if (!empty($posts)):?>
+    <!--
+         <pre>
+             <?php print_r($row); ?>
+         </pre>
+        -->
+    <?php foreach($posts as $key1=>$post): ?>
+    <div class ="comment">
+        <p><?php echo htmlspecialchars($post['notes']); ?></p>
+        <form action='?navigate=delete_note' method='post' name='deleteCmnt'>
+            <input type='hidden' name='delete' value="<?php echo htmlspecialchars($post['id']) ?>" />
+            <input type='submit' value='Delete note'/>
+        </form>
+        <form action='?navigate=edit_note' method='post' name='editCmnt'>
+            <input type='hidden' name='edit' value="<?php echo htmlspecialchars($post['id']) ?>" />
+            <input type='submit' value='Edit note'/>
+        </form>
+    </div>
+    <?php endforeach; ?>
+    <?php else:?>
+    <p>Märkmed puuduvad</p>
+    <?php endif;?>
+</div>

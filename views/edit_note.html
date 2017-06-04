@@ -1,0 +1,5 @@
+<form method="post" action="?navigate=edit_note" id="edit_form">
+    <input type="hidden" name="edit_id" value="<?php echo htmlspecialchars($_POST['edit']) ?>"/>
+    <textarea id="txtArea" name="confirm" form="edit_form" required><?php echo htmlspecialchars($check["notes"]) ?></textarea><br>
+    <input id="submit_button" type="submit" value="Confirm edit"/>
+</form>

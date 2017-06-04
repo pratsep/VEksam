@@ -1,0 +1,101 @@
+.comment, textarea, input[type=text]{
+    margin: 0px;
+    padding: 10px;
+
+//color: black;
+//background-color: slategrey;
+    margin: 5px;
+    width: 100%;
+    border: 1px solid dimgray;
+    border-radius: 8px;
+}
+input[type=text]{
+    width: 100%;
+}
+.comment p {
+    width: 100%;
+//color: white;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-family: "Amarante";
+}
+#username_field{
+    width:50%;
+}
+body {
+    margin: 0px;
+    font-family: "Bad Script";
+    position: relative;
+}
+
+input[type=button], input[type=submit], button, a {
+    font-family: "Bad Script";
+    background-color: dimgray;
+    border: none;
+    color: white;
+    width: 150px;
+    padding: 8px 16px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+}
+.formDE{
+    display: inline-block;
+}
+a.add{
+    margin:4px 2px;
+    margin-left: 15px;
+    padding:0px;
+    display: inline-block;
+}
+a.log{
+    margin:4px 2px;
+    margin-top: 20px;
+    padding:0px;
+    float: right;
+    display: inline-block;
+}
+h2{
+    display: inline-block;
+    margin: 0px;
+}
+header {
+    height: 200px;
+    background-color: dimgray;
+}
+.head{
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: left;
+    color: white;
+    font-size: 24px;
+}
+#p1 {
+    position: relative;
+    top: 150px;
+}
+#p2 {
+    font-size: 120%;
+    font-style: oblique;
+    color: slategrey;
+}
+#p3{
+    font-size: 135%;
+    font-weight: bold;
+}
+#container_users{
+    margin: 0px;
+    padding: 10px;
+    margin: 5px;
+    width: 100%;
+    border: 1px solid dimgray;
+    border-radius: 1px;
+    font-family: "Amarante";
+}
+main {
+    margin-left: 20%;
+    margin-right: 35%;
+    text-align: left;
+}
